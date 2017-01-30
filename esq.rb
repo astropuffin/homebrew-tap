@@ -3,11 +3,10 @@ require "language/go"
 class Esq < Formula
   desc "Esq is a command line utility for querying elasticsearch"
   homepage "https://github.com/astropuffin/esq"
-  url "https://github.com/astropuffin/esq/archive/v0.1.0.tar.gz"
-  sha256 "2add3f5177972f779f9542ca838528cf7d5c2f65261fb48594c677d29fb97ffb"
+  url "https://github.com/astropuffin/esq/archive/v0.2.0.tar.gz"
+  sha256 "8b3d4be1f771ec6ad3b8ae5cceeb5b0b5ff23b98af2dbc550f2f551f49bd1a73"
 
   depends_on "go" => :build
-
 
   # go_resources generated with https://github.com/samertm/homebrew-go-resources
   go_resource "github.com/fsnotify/fsnotify" do
@@ -148,6 +147,6 @@ class Esq < Formula
   end
 
   test do
-    assert_match(/esq version/, shell_output("#{bin}/esq version: 0.1.0"))
+    assert_match(/esq version/, shell_output("#{bin}/esq version: 0.2.0"))
   end
 end
