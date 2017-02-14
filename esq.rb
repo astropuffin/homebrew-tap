@@ -147,6 +147,6 @@ class Esq < Formula
   end
 
   test do
-    assert_match(/esq version/, shell_output("#{bin}/esq version: 0.2.0"))
+    assert_match(/esq version/, shell_output("#{bin}/esq version: 0.2.1"))
   end
 end
